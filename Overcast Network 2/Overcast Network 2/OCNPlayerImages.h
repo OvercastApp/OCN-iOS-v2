@@ -10,7 +10,7 @@
 
 @protocol PlayerImagesDelegate <NSObject>
 
-- (void)imageFinishedLoadingForPlayer:(NSString *)Player;
+- (void)imageFinishedLoadingForPlayer:(NSString *)player;
 
 @end
 

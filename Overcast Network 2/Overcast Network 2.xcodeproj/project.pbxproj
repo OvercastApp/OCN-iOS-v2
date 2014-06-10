@@ -10,16 +10,16 @@
 		5F10744419468A5800908A71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10744319468A5800908A71 /* main.m */; };
 		5F10744719468A5800908A71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10744619468A5800908A71 /* AppDelegate.m */; };
 		5F10744919468A5800908A71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F10744819468A5800908A71 /* Images.xcassets */; };
-		5F10745519468A5800908A71 /* Overcast_Network_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10745419468A5800908A71 /* Overcast_Network_2Tests.m */; };
 		5F10745F19468A8A00908A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F10745E19468A8A00908A71 /* Main.storyboard */; };
 		5F10746219468ADB00908A71 /* ForumMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10746119468ADB00908A71 /* ForumMasterViewController.m */; };
 		5F10746519468AEE00908A71 /* TopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10746419468AEE00908A71 /* TopicDetailViewController.m */; };
 		5F291ABE1946F9C4001A471D /* OCNPlayerImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */; };
 		5F291AC21946FD0D001A471D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F291AC11946FD0D001A471D /* Constants.m */; };
+		5FE4AF701947080E0041EDF8 /* PlayerImagesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4AF6F1947080E0041EDF8 /* PlayerImagesTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5F10744F19468A5800908A71 /* PBXContainerItemProxy */ = {
+		5FFAE2B919470C06000179A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5F10743619468A5800908A71 /* Project object */;
 			proxyType = 1;
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F10743E19468A5800908A71 /* Overcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F10743E19468A5800908A71 /* Overcast Network 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overcast Network 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F10744219468A5800908A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F10744319468A5800908A71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F10744519468A5800908A71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +37,6 @@
 		5F10744819468A5800908A71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F10744E19468A5800908A71 /* Overcast Network 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overcast Network 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F10745319468A5800908A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F10745419468A5800908A71 /* Overcast_Network_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overcast_Network_2Tests.m; sourceTree = "<group>"; };
 		5F10745E19468A8A00908A71 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5F10746019468ADB00908A71 /* ForumMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumMasterViewController.h; sourceTree = "<group>"; };
 		5F10746119468ADB00908A71 /* ForumMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumMasterViewController.m; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNPlayerImages.m; sourceTree = "<group>"; };
 		5F291AC01946FD0D001A471D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		5F291AC11946FD0D001A471D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		5FE4AF6F1947080E0041EDF8 /* PlayerImagesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerImagesTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		5F10743F19468A5800908A71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F10743E19468A5800908A71 /* Overcast.app */,
+				5F10743E19468A5800908A71 /* Overcast Network 2.app */,
 				5F10744E19468A5800908A71 /* Overcast Network 2Tests.xctest */,
 			);
 			name = Products;
@@ -117,7 +117,7 @@
 		5F10745119468A5800908A71 /* Overcast Network 2 Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5F10745419468A5800908A71 /* Overcast_Network_2Tests.m */,
+				5FE4AF6F1947080E0041EDF8 /* PlayerImagesTest.m */,
 				5F10745219468A5800908A71 /* Supporting Files */,
 			);
 			name = "Overcast Network 2 Tests";
@@ -149,7 +149,7 @@
 			);
 			name = "Overcast Network 2";
 			productName = "Overcast Network 2";
-			productReference = 5F10743E19468A5800908A71 /* Overcast.app */;
+			productReference = 5F10743E19468A5800908A71 /* Overcast Network 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5F10744D19468A5800908A71 /* Overcast Network 2Tests */ = {
@@ -163,7 +163,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5F10745019468A5800908A71 /* PBXTargetDependency */,
+				5FFAE2BA19470C06000179A5 /* PBXTargetDependency */,
 			);
 			name = "Overcast Network 2Tests";
 			productName = "Overcast Network 2Tests";
@@ -243,17 +243,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F10745519468A5800908A71 /* Overcast_Network_2Tests.m in Sources */,
+				5FE4AF701947080E0041EDF8 /* PlayerImagesTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5F10745019468A5800908A71 /* PBXTargetDependency */ = {
+		5FFAE2BA19470C06000179A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5F10743D19468A5800908A71 /* Overcast Network 2 */;
-			targetProxy = 5F10744F19468A5800908A71 /* PBXContainerItemProxy */;
+			targetProxy = 5FFAE2B919470C06000179A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,7 +343,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImagev1;
 				INFOPLIST_FILE = "Overcast Network 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Overcast;
+				PRODUCT_NAME = "Overcast Network 2";
 			};
 			name = Debug;
 		};

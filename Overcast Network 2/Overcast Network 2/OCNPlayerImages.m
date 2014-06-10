@@ -23,7 +23,7 @@
 
 - (void)getImageForPlayer:(NSString *)player source:(int)source
 {
-    dispatch_queue_t imageQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+    dispatch_queue_t imageQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0ul);
     dispatch_async(imageQueue, ^(void) {
         NSString *sourceURL = [[NSString alloc] init];
         switch (source) {
