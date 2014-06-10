@@ -26,16 +26,40 @@
     return self;
 }
 
-/*
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.clearsSelectionOnViewWillAppear = NO;
+        self.preferredContentSize = CGSizeMake(320.0, 600.0);
+    }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    self.navigationItem.rightBarButtonItem = addButton;
+    self.detailViewController = (TopicDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Picture-Title-Name Cell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSDate *object = self.objects[indexPath.row];
+    cell.textLabel.text = [object description];
+    cell.textLabel.numberOfLines = 3;
+    cell.detailTextLabel.text = @"Author";
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -86,29 +110,6 @@
 }
  */
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        self.clearsSelectionOnViewWillAppear = NO;
-        self.preferredContentSize = CGSizeMake(320.0, 600.0);
-    }
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (TopicDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)insertNewObject:(id)sender {
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
@@ -138,14 +139,6 @@
     return self.objects.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
-    return cell;
-}
-
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
@@ -165,6 +158,11 @@
 //        NSDate *object = self.objects[indexPath.row];
 //        self.detailViewController.detailItem = object;
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70.0;
 }
 
 @end

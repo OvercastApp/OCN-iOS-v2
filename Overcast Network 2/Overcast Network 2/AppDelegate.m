@@ -10,16 +10,18 @@
 
 @interface AppDelegate ()
             
-
 @end
 
 @implementation AppDelegate
-            
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     splitViewController.delegate = (id)navigationController.topViewController;
+    _window.tintColor = [UIColor colorWithRed:0.7
+                                        green:0.0
+                                         blue:0.006
+                                        alpha:1.0];
     return YES;
 }
 
