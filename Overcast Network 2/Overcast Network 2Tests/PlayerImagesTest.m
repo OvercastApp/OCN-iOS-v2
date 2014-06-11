@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "OCNPlayerImages.h"
+#import "UIImage+Extras.h"
 
 @interface PlayerImagesTest : XCTestCase <PlayerImagesDelegate>
 
@@ -19,7 +20,7 @@
 
 - (void)setUp {
     [super setUp];
-    imageLoadedExpectation = [self expectationWithDescription:@"image loaded"];
+    imageLoadedExpectation = [self expectationWithDescription:@"Image Loaded Expectation"];
     [OCNPlayerImages instance].delegate = self;
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -36,7 +37,10 @@
 
 - (void)imageFinishedLoadingForPlayer:(NSString *)player {
     UIImage *playerImage = ([OCNPlayerImages instance].playerImages)[player];
-    XCTAssertTrue(playerImage, @"Pass");
+    XCTAssertTrue(playerImage, @"Image Received");
+    [self measureBlock:^{
+        UIImage *newImage = [[playerImage scaleImageToSize:CGSizeMake(36.0, 36.0)] imageWithRoundedCornersRadius:5.0];
+    }];
     [imageLoadedExpectation fulfill];
 }
 

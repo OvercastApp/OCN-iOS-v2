@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ForumDataSource.h"
+#import "OCNPlayerImages.h"
 
 @protocol ForumTVCDataSourceDelegate <NSObject>
 
@@ -15,7 +16,7 @@
 
 @end
 
-@interface ForumTVCDataSource : NSObject <UITableViewDataSource, ForumDataSourceDelegate>
+@interface ForumTVCDataSource : NSObject <UITableViewDataSource, ForumDataSourceDelegate, PlayerImagesDelegate>
 
 @property (nonatomic,strong) NSMutableArray *topics;
 @property (nonatomic,strong) id<ForumTVCDataSourceDelegate> delegate;

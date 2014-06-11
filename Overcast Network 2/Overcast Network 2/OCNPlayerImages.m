@@ -9,7 +9,7 @@
 #import "OCNPlayerImages.h"
 #import "Constants.h"
 
-#define OCN_AVATAR @"https://avatar.oc.tc/%@/48.png"
+#define OCN_AVATAR @"https://avatar.oc.tc/%@/8.png"
 
 @implementation OCNPlayerImages
 
@@ -28,7 +28,7 @@
         NSString *sourceURL = [[NSString alloc] init];
         switch (source) {
             case 0:
-                sourceURL = [NSString stringWithFormat:@"%@avatar.php?name=%@&size=48",parsedDataSourceURL,player];
+                sourceURL = [NSString stringWithFormat:@"%@avatar.php?name=%@&size=8",parsedDataSourceURL,player];
                 break;
                 
             case 1:

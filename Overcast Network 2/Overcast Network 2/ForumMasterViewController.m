@@ -52,6 +52,9 @@
     [self.contentRefreshControl addTarget:self
                                    action:@selector(refreshControlValueChanged:)
                          forControlEvents:UIControlEventValueChanged];
+    
+    [self.refreshControl beginRefreshing];
+    [self.forumDataSource fetchData];
 }
 
 - (void)didReceiveMemoryWarning {

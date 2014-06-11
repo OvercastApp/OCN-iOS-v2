@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Profiles-->
         <scene sceneID="7Lt-wV-Ibw">
             <objects>
                 <viewController id="NdT-o3-5wx" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="bMR-2o-N7n"/>
+                    <tabBarItem key="tabBarItem" title="Profiles" image="Steve" id="bMR-2o-N7n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xb6-mR-dyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,17 +52,18 @@
                     <connections>
                         <segue destination="H1p-Uh-vWS" kind="relationship" relationship="viewControllers" id="lvf-aW-zoE"/>
                         <segue destination="NdT-o3-5wx" kind="relationship" relationship="viewControllers" id="dOO-P7-i9H"/>
+                        <segue destination="QQj-6g-k4v" kind="relationship" relationship="viewControllers" id="2eY-k1-6i9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hQ-xv-qVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1387" y="-56"/>
+            <point key="canvasLocation" x="-1387" y="210"/>
         </scene>
-        <!--Split View Controller - Item-->
+        <!--Split View Controller - Forums-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7oq-CP-51s"/>
+                    <tabBarItem key="tabBarItem" title="Forums" image="Forums" id="7oq-CP-51s"/>
                     <toolbarItems/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
@@ -219,8 +220,53 @@
             </objects>
             <point key="canvasLocation" x="604" y="27"/>
         </scene>
+        <!--View Controller - Item 2-->
+        <scene sceneID="we3-VU-JdA">
+            <objects>
+                <viewController id="hhA-1h-JtI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C2m-Oe-zS1"/>
+                        <viewControllerLayoutGuide type="bottom" id="1zN-dj-aq0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ge1-KS-Myr">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="kaq-0W-D8S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfo-vE-50A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="742"/>
+        </scene>
+        <!--View Controller - Maps-->
+        <scene sceneID="Lhk-KJ-XF0">
+            <objects>
+                <viewController id="QQj-6g-k4v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xca-rO-Zqc"/>
+                        <viewControllerLayoutGuide type="bottom" id="D6b-rx-Cvx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pg4-C9-fFh">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Maps" image="Maps" id="fLw-09-YMc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdY-IX-6rU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="742"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Forums" width="25" height="25"/>
+        <image name="Maps" width="25" height="25"/>
+        <image name="Steve" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

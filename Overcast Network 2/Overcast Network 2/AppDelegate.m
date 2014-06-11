@@ -16,12 +16,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    
+    UITabBarItem *tabBarItem1 = tabBarController.tabBar.items[0];
+    UITabBarItem *tabBarItem2 = tabBarController.tabBar.items[1];
+    UITabBarItem *tabBarItem3 = tabBarController.tabBar.items[2];
+    
+    tabBarItem1.selectedImage = [[UIImage imageNamed:@"ForumsSelected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem2.selectedImage = [[UIImage imageNamed:@"SteveSelected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem3.selectedImage = [[UIImage imageNamed:@"MapsSelected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
     UISplitViewController *splitViewController = tabBarController.viewControllers[0];
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     splitViewController.delegate = (id)navigationController.topViewController;
     _window.tintColor = [UIColor colorWithRed:0.7
                                         green:0.0
-                                         blue:0.006
+                                         blue:0.0
                                         alpha:1.0];
     return YES;
 }
