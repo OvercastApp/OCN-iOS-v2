@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ForumTVCDataSource.h"
 
 @class TopicDetailViewController;
 
-@interface ForumMasterViewController : UITableViewController
+@interface ForumMasterViewController : UITableViewController <ForumTVCDataSourceDelegate>
 
 @property (strong, nonatomic) TopicDetailViewController *detailViewController;
+@property (weak, nonatomic) IBOutlet UIRefreshControl *contentRefreshControl;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  TopicDetailViewController.h
+//  EncapsulatedSplitViewController.h
 //  Overcast Network 2
 //
 //  Created by ycao on 6/10/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicDetailViewController : UITableViewController <UISplitViewControllerDelegate>
+@interface EncapsulatedSplitViewController : UISplitViewController
 
 @end

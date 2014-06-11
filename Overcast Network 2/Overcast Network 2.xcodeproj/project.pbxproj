@@ -15,6 +15,11 @@
 		5F10746519468AEE00908A71 /* TopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F10746419468AEE00908A71 /* TopicDetailViewController.m */; };
 		5F291ABE1946F9C4001A471D /* OCNPlayerImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */; };
 		5F291AC21946FD0D001A471D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F291AC11946FD0D001A471D /* Constants.m */; };
+		5FDB6E2719474056004A2FFD /* ForumTVCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB6E2619474056004A2FFD /* ForumTVCDataSource.m */; };
+		5FDB6E2A19474339004A2FFD /* TopicTVCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB6E2919474339004A2FFD /* TopicTVCDataSource.m */; };
+		5FDB6E30194755A9004A2FFD /* EncapsulatedSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB6E2F194755A9004A2FFD /* EncapsulatedSplitViewController.m */; };
+		5FDB6E331947645E004A2FFD /* ForumDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB6E321947645E004A2FFD /* ForumDataSource.m */; };
+		5FDB6E361947F0B4004A2FFD /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB6E351947F0B4004A2FFD /* Topic.m */; };
 		5FE4AF701947080E0041EDF8 /* PlayerImagesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4AF6F1947080E0041EDF8 /* PlayerImagesTest.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,16 @@
 		5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNPlayerImages.m; sourceTree = "<group>"; };
 		5F291AC01946FD0D001A471D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		5F291AC11946FD0D001A471D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		5FDB6E2519474056004A2FFD /* ForumTVCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTVCDataSource.h; sourceTree = "<group>"; };
+		5FDB6E2619474056004A2FFD /* ForumTVCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTVCDataSource.m; sourceTree = "<group>"; };
+		5FDB6E2819474339004A2FFD /* TopicTVCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTVCDataSource.h; sourceTree = "<group>"; };
+		5FDB6E2919474339004A2FFD /* TopicTVCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTVCDataSource.m; sourceTree = "<group>"; };
+		5FDB6E2E194755A9004A2FFD /* EncapsulatedSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncapsulatedSplitViewController.h; sourceTree = "<group>"; };
+		5FDB6E2F194755A9004A2FFD /* EncapsulatedSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncapsulatedSplitViewController.m; sourceTree = "<group>"; };
+		5FDB6E311947645E004A2FFD /* ForumDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumDataSource.h; sourceTree = "<group>"; };
+		5FDB6E321947645E004A2FFD /* ForumDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumDataSource.m; sourceTree = "<group>"; };
+		5FDB6E341947F0B4004A2FFD /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		5FDB6E351947F0B4004A2FFD /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 		5FE4AF6F1947080E0041EDF8 /* PlayerImagesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerImagesTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,12 +106,7 @@
 				5F10744519468A5800908A71 /* AppDelegate.h */,
 				5F10744619468A5800908A71 /* AppDelegate.m */,
 				5F10745E19468A8A00908A71 /* Main.storyboard */,
-				5F10746019468ADB00908A71 /* ForumMasterViewController.h */,
-				5F10746119468ADB00908A71 /* ForumMasterViewController.m */,
-				5F10746319468AEE00908A71 /* TopicDetailViewController.h */,
-				5F10746419468AEE00908A71 /* TopicDetailViewController.m */,
-				5F291ABC1946F9C4001A471D /* OCNPlayerImages.h */,
-				5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */,
+				5FDB6E2B19474D01004A2FFD /* Forums */,
 				5F291AC01946FD0D001A471D /* Constants.h */,
 				5F291AC11946FD0D001A471D /* Constants.m */,
 				5F10744819468A5800908A71 /* Images.xcassets */,
@@ -130,6 +140,45 @@
 				5F10745319468A5800908A71 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FDB6E2B19474D01004A2FFD /* Forums */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB6E2E194755A9004A2FFD /* EncapsulatedSplitViewController.h */,
+				5FDB6E2F194755A9004A2FFD /* EncapsulatedSplitViewController.m */,
+				5FDB6E2C19474D0B004A2FFD /* Forum (Master) */,
+				5FDB6E2D19474D11004A2FFD /* Topic (Detail) */,
+				5F291ABC1946F9C4001A471D /* OCNPlayerImages.h */,
+				5F291ABD1946F9C4001A471D /* OCNPlayerImages.m */,
+			);
+			name = Forums;
+			sourceTree = "<group>";
+		};
+		5FDB6E2C19474D0B004A2FFD /* Forum (Master) */ = {
+			isa = PBXGroup;
+			children = (
+				5F10746019468ADB00908A71 /* ForumMasterViewController.h */,
+				5F10746119468ADB00908A71 /* ForumMasterViewController.m */,
+				5FDB6E2519474056004A2FFD /* ForumTVCDataSource.h */,
+				5FDB6E2619474056004A2FFD /* ForumTVCDataSource.m */,
+				5FDB6E311947645E004A2FFD /* ForumDataSource.h */,
+				5FDB6E321947645E004A2FFD /* ForumDataSource.m */,
+				5FDB6E341947F0B4004A2FFD /* Topic.h */,
+				5FDB6E351947F0B4004A2FFD /* Topic.m */,
+			);
+			name = "Forum (Master)";
+			sourceTree = "<group>";
+		};
+		5FDB6E2D19474D11004A2FFD /* Topic (Detail) */ = {
+			isa = PBXGroup;
+			children = (
+				5F10746319468AEE00908A71 /* TopicDetailViewController.h */,
+				5F10746419468AEE00908A71 /* TopicDetailViewController.m */,
+				5FDB6E2819474339004A2FFD /* TopicTVCDataSource.h */,
+				5FDB6E2919474339004A2FFD /* TopicTVCDataSource.m */,
+			);
+			name = "Topic (Detail)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDB6E361947F0B4004A2FFD /* Topic.m in Sources */,
 				5F10746219468ADB00908A71 /* ForumMasterViewController.m in Sources */,
 				5F291ABE1946F9C4001A471D /* OCNPlayerImages.m in Sources */,
 				5F10744719468A5800908A71 /* AppDelegate.m in Sources */,
+				5FDB6E30194755A9004A2FFD /* EncapsulatedSplitViewController.m in Sources */,
+				5FDB6E331947645E004A2FFD /* ForumDataSource.m in Sources */,
 				5F10744419468A5800908A71 /* main.m in Sources */,
+				5FDB6E2719474056004A2FFD /* ForumTVCDataSource.m in Sources */,
 				5F10746519468AEE00908A71 /* TopicDetailViewController.m in Sources */,
+				5FDB6E2A19474339004A2FFD /* TopicTVCDataSource.m in Sources */,
 				5F291AC21946FD0D001A471D /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
