@@ -21,7 +21,6 @@
 - (void)setUp {
     [super setUp];
     imageLoadedExpectation = [self expectationWithDescription:@"Image Loaded Expectation"];
-    [OCNPlayerImages instance].delegate = self;
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -31,7 +30,9 @@
 }
 
 - (void)testPlayerImages {
-    [[OCNPlayerImages instance] getImageForPlayer:@"Schemetrical" source:1];
+    [[OCNPlayerImages instance] getImageForPlayer:@"Schemetrical"
+                                           source:OCN
+                                         delegate:self];
     [self waitForExpectationsWithTimeout:15 handler:nil];
 }
 
@@ -39,7 +40,7 @@
     UIImage *playerImage = ([OCNPlayerImages instance].playerImages)[player];
     XCTAssertTrue(playerImage, @"Image Received");
     [self measureBlock:^{
-        UIImage *newImage = [[playerImage scaleImageToSize:CGSizeMake(36.0, 36.0)] imageWithRoundedCornersRadius:5.0];
+        UIImage *newImage = [[playerImage scaleImageToSize:CGSizeMake(36.0, 36.0)] imageWithRoundedCornersRadius:2.0];
     }];
     [imageLoadedExpectation fulfill];
 }

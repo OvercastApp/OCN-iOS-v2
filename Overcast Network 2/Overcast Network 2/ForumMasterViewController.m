@@ -47,6 +47,12 @@
                                                                                target:self
                                                                                action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.396
+                                                                           green:0.0
+                                                                            blue:0.0
+                                                                           alpha:1.0];
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     self.detailViewController = (TopicDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     [self.contentRefreshControl addTarget:self
@@ -86,6 +92,12 @@
     [self.tableView insertSections:sections
                   withRowAnimation:UITableViewRowAnimationAutomatic];
     [self.refreshControl endRefreshing];
+}
+
+- (void)reloadIndexPaths:(NSArray *)indexPaths
+{
+    [self.tableView reloadRowsAtIndexPaths:indexPaths
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 @end

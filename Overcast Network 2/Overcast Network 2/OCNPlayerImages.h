@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    ThirdParty,
+    OCN
+} PlayerImageSource;
+
 @protocol PlayerImagesDelegate <NSObject>
 
 - (void)imageFinishedLoadingForPlayer:(NSString *)player;
@@ -16,10 +21,9 @@
 
 @interface OCNPlayerImages : NSObject
 
-@property (nonatomic, weak) id <PlayerImagesDelegate> delegate;
 @property (nonatomic,strong) NSMutableDictionary *playerImages;
 
-- (void)getImageForPlayer:(NSString *)player source:(int)source;
+- (void)getImageForPlayer:(NSString *)player source:(PlayerImageSource)source delegate:(id<PlayerImagesDelegate>)delegate;
 
 + (OCNPlayerImages *)instance;
 

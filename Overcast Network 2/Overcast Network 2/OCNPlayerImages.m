@@ -21,17 +21,17 @@
     return _playerImages;
 }
 
-- (void)getImageForPlayer:(NSString *)player source:(int)source
+- (void)getImageForPlayer:(NSString *)player source:(PlayerImageSource)source delegate:(id<PlayerImagesDelegate>)delegate
 {
     dispatch_queue_t imageQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0ul);
     dispatch_async(imageQueue, ^(void) {
         NSString *sourceURL = [[NSString alloc] init];
         switch (source) {
-            case 0:
+            case ThirdParty:
                 sourceURL = [NSString stringWithFormat:@"%@avatar.php?name=%@&size=8",parsedDataSourceURL,player];
                 break;
                 
-            case 1:
+            case OCN:
                 sourceURL = [NSString stringWithFormat:OCN_AVATAR,player];
                 break;
         }
@@ -40,7 +40,7 @@
         if (image) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 (self.playerImages)[player] = image;
-                [self.delegate imageFinishedLoadingForPlayer:player];
+                [delegate imageFinishedLoadingForPlayer:player];
             });
         }
     });
@@ -68,8 +68,7 @@ static OCNPlayerImages *_default = nil;
         return _default;
     }
     static dispatch_once_t safer;
-    dispatch_once(&safer, ^(void)
-                  {
+    dispatch_once(&safer, ^(void) {
                       _default = [[OCNPlayerImages alloc] initSingleton];
                   });
     return _default;

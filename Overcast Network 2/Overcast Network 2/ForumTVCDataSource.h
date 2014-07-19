@@ -13,6 +13,7 @@
 @protocol ForumTVCDataSourceDelegate <NSObject>
 
 - (void)insertSections:(NSIndexSet *)sections;
+- (void)reloadIndexPaths:(NSArray *)indexPaths;
 
 @end
 
