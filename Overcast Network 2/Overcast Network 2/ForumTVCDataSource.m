@@ -26,7 +26,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Image-Title-Author Cell" forIndexPath:indexPath];
     
     cell.textLabel.text = topic.title;
-    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     cell.textLabel.numberOfLines = 0;
     
     cell.detailTextLabel.text = topic.author;
